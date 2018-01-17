@@ -84,6 +84,7 @@ chartRangeMin|chart-range-min|Minimum Value to display|chart-range-min=0
 chartRangeMax|chart-range-max|Maximum Value to display|chart-range-max=100
 tooltipClassname|tooltip-classname|Create your own CSS class for tooltips|see DEMO
 points|points||points="[1,2,3,4,5,6,5,4,3,2,1]"
+tooltipValueLookups|tooltip-value-lookups||tooltip-value-lookups="[Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]"
 
 
 ## Special attributes
