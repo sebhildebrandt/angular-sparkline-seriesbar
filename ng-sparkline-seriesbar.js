@@ -12,6 +12,7 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                 barSpacing: '@',
                 tooltipSuffix: '@',
                 tooltipPrefix: '@',
+                tooltipValueLookups: '=',
                 numberDigitGroupSep: '@',
                 numberDecimalMark: '@',
                 colorMap: '@',
@@ -47,6 +48,10 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                         barSpacing: $scope.barSpacing || 1,
                         tooltipSuffix: angular.isDefined($scope.tooltipSuffix) ? ' ' + $scope.tooltipSuffix : '',
                         tooltipPrefix: angular.isDefined($scope.tooltipPrefix) ? $scope.tooltipPrefix + ' ' : '',
+                        tooltipFormat: angular.isDefined($scope.tooltipValueLookups) ? '{{offset:offset}} {{value}}' : '{{value}}',
+                        tooltipValueLookups: {
+                            'offset': $scope.tooltipValueLookups
+                        },
                         numberDigitGroupSep: $scope.numberDigitGroupSep,
                         numberDecimalMark: $scope.numberDecimalMark,
                         colorMap: colorMap,
